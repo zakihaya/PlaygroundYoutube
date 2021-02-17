@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22B373614B46BBEC4C56528A /* Pods_Transition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01CECA4CEC307DF1937F9AC2 /* Pods_Transition.framework */; };
 		348D5F9F25DC987300EC26A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348D5F9E25DC987300EC26A6 /* AppDelegate.swift */; };
 		348D5FA125DC987300EC26A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348D5FA025DC987300EC26A6 /* SceneDelegate.swift */; };
 		348D5FA325DC987300EC26A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348D5FA225DC987300EC26A6 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01CECA4CEC307DF1937F9AC2 /* Pods_Transition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Transition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BDE6D22E83A2A4CC79A5B2D /* Pods-Transition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transition.release.xcconfig"; path = "Target Support Files/Pods-Transition/Pods-Transition.release.xcconfig"; sourceTree = "<group>"; };
 		348D5F9B25DC987300EC26A6 /* Transition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		348D5F9E25DC987300EC26A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		348D5FA025DC987300EC26A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		348D5FA725DC987500EC26A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		348D5FAA25DC987500EC26A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		348D5FAC25DC987500EC26A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76CF14F99D58B07EB3470CB5 /* Pods-Transition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transition.debug.xcconfig"; path = "Target Support Files/Pods-Transition/Pods-Transition.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22B373614B46BBEC4C56528A /* Pods_Transition.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2767C006F94ED799FBAD2531 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76CF14F99D58B07EB3470CB5 /* Pods-Transition.debug.xcconfig */,
+				2BDE6D22E83A2A4CC79A5B2D /* Pods-Transition.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		348D5F9225DC987300EC26A6 = {
 			isa = PBXGroup;
 			children = (
 				348D5F9D25DC987300EC26A6 /* Transition */,
 				348D5F9C25DC987300EC26A6 /* Products */,
+				2767C006F94ED799FBAD2531 /* Pods */,
+				EDB8DD7C03308B8F0EC79D7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = Transition;
 			sourceTree = "<group>";
 		};
+		EDB8DD7C03308B8F0EC79D7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01CECA4CEC307DF1937F9AC2 /* Pods_Transition.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 348D5FAF25DC987500EC26A6 /* Build configuration list for PBXNativeTarget "Transition" */;
 			buildPhases = (
+				591116D8037871C6BFDC1537 /* [CP] Check Pods Manifest.lock */,
 				348D5F9725DC987300EC26A6 /* Sources */,
 				348D5F9825DC987300EC26A6 /* Frameworks */,
 				348D5F9925DC987300EC26A6 /* Resources */,
+				9588AB8F432DA07182FF710E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		591116D8037871C6BFDC1537 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Transition-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9588AB8F432DA07182FF710E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Transition/Pods-Transition-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Transition/Pods-Transition-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Transition/Pods-Transition-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		348D5F9725DC987300EC26A6 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		348D5FB025DC987500EC26A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76CF14F99D58B07EB3470CB5 /* Pods-Transition.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +371,7 @@
 		};
 		348D5FB125DC987500EC26A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BDE6D22E83A2A4CC79A5B2D /* Pods-Transition.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
